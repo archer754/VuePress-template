@@ -1,0 +1,24 @@
+{
+  "name": "vuepress_note",
+  "version": "1.0.0",
+  "description": "个人知识库",
+  "main": "index.js",
+  "scripts": {
+    "docs:dev": "vuepress dev docs",
+    "docs:build": "vuepress build docs",
+    "deploy": "bash deploy.sh",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "meishun.chen",
+  "license": "ISC",
+  "devDependencies": {
+    "@vuepress/plugin-back-to-top": "^1.8.2",
+    "@vuepress/plugin-nprogress": "^1.8.2",
+    "vuepress": "^1.8.2"
+  },
+  "dependencies": {
+    "compression-webpack-plugin": "^3.1.0",
+    "image-webpack-loader": "^7.0.1",
+    "mini-css-extract-plugin": "^1.6.0"
+  }
+}
