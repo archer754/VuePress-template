@@ -4,8 +4,8 @@ const CompressionWebpackPlugin = require('compression-webpack-plugin');
 
 module.exports = {
     base: "/",                          // 部署站点的基础路径,如果你的网站部署到 https://foo.github.io/bar/，那么 base 应该被设置成 "/bar/"，它的值应当总是以斜杠开始，并以斜杠结束。
-    title: '前端知识库',                  // 设置网站标题
-    description: '这是个人的知识库',    // 描述
+    title: '知识库',                    // 设置网站标题
+    description: '这是个人的知识库',        // 描述
     head: [                             // 额外的需要被注入到当前页面的 HTML <head> 中的标签，每个标签都可以以 [tagName, { attrName: attrValue }, innerHTML?] 的格式指定
         ['link', { rel: 'icon', href: '/logo.png' }]
     ],
@@ -22,30 +22,30 @@ module.exports = {
             text: '主页',
             link: '/'
         },
-        {
-            text: '组件文档',
-            link: '/baseComponents/',
-            target: '_blank'
-        },
-        {
-            text: '知识库',
-            link: '/knowledge/',
-            target: '_blank'
-        },
-        {
-            text: 'github', // 这里是下拉列表展现形式。
-            items: [{
-                text: 'focus-outside',
-                link: 'https://github.com/TaoXuSheng/focus-outside',
-                target: '_blank'
-            },
-            {
-                text: 'stylus-converter',
-                link: 'https://github.com/TaoXuSheng/stylus-converter',
-                target: '_blank'
-            },
-            ]
-        }
+        // {
+        //     text: '组件文档',
+        //     link: '/baseComponents/',
+        //     target: '_blank'
+        // },
+        // {
+        //     text: '知识库',
+        //     link: '/knowledge/',
+        //     target: '_blank'
+        // },
+        // {
+        //     text: 'github', // 这里是下拉列表展现形式。
+        //     items: [{
+        //         text: 'focus-outside',
+        //         link: 'https://github.com/TaoXuSheng/focus-outside',
+        //         target: '_blank'
+        //     },
+        //     {
+        //         text: 'stylus-converter',
+        //         link: 'https://github.com/TaoXuSheng/stylus-converter',
+        //         target: '_blank'
+        //     },
+        //     ]
+        // }
         ],
         // 为以下路由添加侧边栏
         sidebar: [
